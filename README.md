@@ -1,4 +1,5 @@
 # iboki
+<<<<<<< HEAD
 A currently in development social networking system. It aims to be simple and easy to use.
 
 ## Getting Started
@@ -17,3 +18,6 @@ and then installing the dependencies using
 ### Running
 Run the application using
 ```npm start```
+=======
+test
+>>>>>>> a78a204c0989d853c73751611ec800f98d7b322e
