@@ -10,10 +10,16 @@ Make sure to have `node` and `npm` installed. You can do this by using a package
 
 ### Installation
 Clone the repo using
-```git clone https://github.com/De2290/iboki```
+```
+git clone https://github.com/De2290/iboki
+```
 and then installing the dependencies using
-```npm install```
+```
+npm install
+```
 
 ### Running
 Run the application using
-```npm start```
+```
+npm start
+```
