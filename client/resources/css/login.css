@@ -11,7 +11,7 @@ body, html {
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-	width: 450px;
+	width: 800px;
 	height: 650px;
 	background: white;
 	border: none;
