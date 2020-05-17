@@ -24,25 +24,23 @@ body, html {
 	border: none;
 	width: 75%;
 	height: 40px;
-	border-radius: 100px;
 	text-align: left;
 	font-family: 'Noto Sans';
 	margin-left: 12.5%;
 	border: 2px solid #16191c;
-	color: white;
+	color: black;
 	font-family: "Open Sans";
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background: #16191c;
 }
 #username {
 	margin-top: 225px;
 }
 
 #password {
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #logo {
@@ -62,11 +60,12 @@ body, html {
 	margin-left: 12.5%;
 	outline: none;
 	background: none;
+	border: 2px solid black;
 	
 }
 
 ::placeholder {
-	color: white;
+	color: black;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	
