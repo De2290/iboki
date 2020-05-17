@@ -6,7 +6,7 @@ var account = {
 		Client.connect(url, async (err, db) => {
 			if (err) throw err;
 			dbo = db.db("mydb");
-			entry = {username: user, password: pwd};
+			entry = {username: user};
 			exists = await dbo.collection("iboki_accounts").findOne(entry);
 			if (exists == null) {
 				var exists = await dbo.collection("iboki_accounts").insertOne(entry);
