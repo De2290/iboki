@@ -21,17 +21,18 @@ body, html {
 	border: none;
 	width: 75%;
 	height: 40px;
-	border-radius: 0px;
+	border-radius: 100px;
 	text-align: left;
 	font-family: 'Noto Sans';
 	margin-left: 12.5%;
 	border: 2px solid #16191c;
-	color: black;
+	color: white;
 	font-family: "Open Sans";
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	background: #16191c;
 }
 #username {
 	margin-top: 225px;
@@ -57,11 +58,12 @@ body, html {
 #submit{
 	margin-left: 12.5%;
 	outline: none;
-	border
+	background: none;
+	
 }
 
 ::placeholder {
-	color: black;
+	color: white;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	
