@@ -58,6 +58,8 @@ body, html {
 }
 
 ::placeholder {
-      color: black;
-      letter-spacing: 1px;
+	color: black;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text
 }
