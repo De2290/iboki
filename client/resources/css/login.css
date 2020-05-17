@@ -21,12 +21,13 @@ body, html {
 #username, #password {
 	outline: none;
 	border: none;
-	width: 75%;
+	width: 60%;
 	height: 40px;
-	border-radius: 5px;
-	text-align: center;
+	border-radius: 10px;
+	text-align: left;
 	font-family: 'Noto Sans';
 	margin-left: 12.5%;
+	background: #16191c;
 }
 #username {
 	margin-top: 250px;
