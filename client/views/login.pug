@@ -7,8 +7,11 @@ html(lang="en")
 	body
 		script(src="/js/jquery.js")
 		div#login
+			img(src="/images/iboki_logo.png", height="auto", width="500px")#icon
+			div#logo IBOKI
 			form(action="/login", method="POST").loginForm
 				input(placeholder="Username", name="username")#username
 				input(type="password", placeholder="Password", name="password")#password
-				button(type="submit")#submit Submit
-			div#logo IBOKI
+				br
+				br
+				button(type="submit")#submit Log in
