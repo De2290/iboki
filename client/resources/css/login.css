@@ -37,7 +37,7 @@ body, html {
 	font-size: 15px;
 	positon: relative;
 	margin-left: 40%;
-	margin-top: -25%;
+	margin-top: -20%;
 }
 #username {
 	margin-top: 225px;
@@ -57,7 +57,7 @@ body, html {
 	letter-spacing: 25px;
 	font-weight: 10px;
 	margin-left: 10%;
-	margin-top: -25%;
+	margin-top: -20%;
 }
 
 #submit{
