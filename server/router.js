@@ -18,5 +18,8 @@ router.post("/login", (req, res) => {
     console.log(`Username: ${req.body.username}, Password: ${req.body.password}`);
     database.login(req.body.username, req.body.password);
     res.redirect("/login");
+}).post("/register", (req, res) => {
+    database.create(req.body.username, req.body.password);
+    res.redirect("/login");
 })
 module.exports = router;
