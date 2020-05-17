@@ -26,4 +26,4 @@ npm start
 
 
 ## Troubleshooting
-Make sure to have `nodemon` installed.
+Make sure to have `nodemon` installed. It should already be installed though if you did ```npm install```
