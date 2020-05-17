@@ -14,7 +14,7 @@ body, html {
 	height: 650px;
 	background: white;
 	border: 8px solid;
-        border-image-source: linear-gradient(to bottom right, #5433FF, #20BDFF, #A5FECB);
+        border-image-source: linear-gradient(to bottom right, dodgerblue, crimson);
         border-image-slice: 60 30;
 }
 
