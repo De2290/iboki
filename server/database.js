@@ -5,7 +5,7 @@ var account = {
 	create: (user, pwd) => {
 		Client.connect(url, async (err, db) => {
 			if (err) throw err;
-			dbo = db.db("mydb");
+			dbo = db.db("iboki");
 			entry = {username: user};
 			exists = await dbo.collection("iboki_accounts").findOne(entry);
 			if (exists == null) {
@@ -19,7 +19,7 @@ var account = {
 	login: (user, pwd) => {
 		Client.connect(url, async (err, db) => {
 			if (err) throw err;
-			dbo = db.db('mydb');
+			dbo = db.db("iboki");
 			entry = {username: user, password: pwd};
 			exists = await dbo.collection("iboki_accounts").findOne(entry);
 			if (exists !== null) {
