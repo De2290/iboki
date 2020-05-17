@@ -80,7 +80,7 @@ body, html {
 	width: 150px;
 	margin-left: 40%;
 	letter-spacing: 2px;
-	transition: background;
+	transition: background 0.1s;
 	cursor: pointer;
 }
 
