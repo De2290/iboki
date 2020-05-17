@@ -36,7 +36,11 @@ body, html {
 	padding-bottom: 5px;
 }
 #username {
-	margin-top: 250px;
+	margin-top: 225px;
+}
+
+#password {
+	margin-top: 5px;
 }
 
 #logo {
@@ -46,10 +50,14 @@ body, html {
 	top: 150px;
 	text-align: center;
 	font-family: "Open Sans";
-	font-size: 75px;
+	font-size: 60px;
 	text-transform: uppercase;
-	letter-spacing: 15px;
+	letter-spacing: 20px;
 	font-weight: 10px;
+}
+
+#submit{
+
 }
 
 ::placeholder {
