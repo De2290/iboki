@@ -14,7 +14,7 @@ body, html {
 	height: 650px;
 	background: white;
 	border: 10px solid;
-        border-image-source: linear-gradient(to right, dodgerblue, crimson, dodgerblue, crimson, dodgerblue, crimson);
+        border-image-source: linear-gradient(to top, dodgerblue, crimson, dodgerblue, crimson, dodgerblue, crimson);
         border-image-slice: 60 30;
 }
 
@@ -53,6 +53,6 @@ body, html {
 }
 
 ::placeholder {
-      color: whitesmoke;
+      color: white;
       letter-spacing: 1px;
 }
