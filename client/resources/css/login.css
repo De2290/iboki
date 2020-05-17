@@ -13,9 +13,7 @@ body, html {
 	width: 500px;
 	height: 650px;
 	background: white;
-	border: 8px solid;
-        border-image-source: linear-gradient(to bottom right, dodgerblue, crimson);
-        border-image-slice: 60 30;
+	border: 5px solid #16191c;
 }
 
 #username, #password {
@@ -57,7 +55,9 @@ body, html {
 }
 
 #submit{
-
+	margin-left: 12.5%;
+	outline: none;
+	border
 }
 
 ::placeholder {
