@@ -1,4 +1,5 @@
 const express = require('express');
+const database = require('./database.js');
 
 const router = express.Router();
 
@@ -9,12 +10,13 @@ router
 .get("/login", (req, res) => {
     res.render('login');
 })
-
-router.get("/register", (req, res) => {
+.get("/register", (req, res) => {
     res.render('register');
 })
+
 router.post("/login", (req, res) => {
     console.log(`Username: ${req.body.username}, Password: ${req.body.password}`);
+    database.login(req.body.username, req.body.password);
     res.redirect("/login");
 })
 module.exports = router;
