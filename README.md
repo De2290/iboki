@@ -1,7 +1,5 @@
 # iboki
-<<<<<<< HEAD
-test #2
-=======
+
 A currently in development social networking system. It aims to be simple and easy to use.
 
 ## Getting Started
