@@ -76,7 +76,7 @@ body, html {
 
 ::placeholder {
 	color: black;
-	letter-spacing: 1px;
+	letter-spacing: 4px;
 	text-transform: uppercase;
 	
 }
