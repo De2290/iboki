@@ -23,3 +23,7 @@ Run the application using
 ```
 npm start
 ```
+
+
+## Troubleshooting
+Make sure to have `nodemon` installed.
