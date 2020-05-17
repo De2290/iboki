@@ -10,8 +10,8 @@ body, html {
 #icon {
 	z-index: -20;
 	position: fixed;
-	margin-left: -55%;
-	margin-top: 10%;
+	margin-left: -50%;
+	margin-top: 0%;
 }
 #login{
 	position: absolute;
