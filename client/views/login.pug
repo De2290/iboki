@@ -10,5 +10,6 @@ html(lang="en")
 			div#logo IBOKI
 			form(action="/login", method="POST").loginForm
 				input(placeholder="Username", name="username")#username
-				input(type="password", placeholder="Password", name="password")#password
-				button(type="submit")#submit Submit
+				| input(type="password", placeholder="Password", name="password")#password
+				br
+				| button(type="submit")#submit Submit
