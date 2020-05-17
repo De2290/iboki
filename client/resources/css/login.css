@@ -2,7 +2,9 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	  background: linear-gradient(to bottom right, #13191c, #414b52);
+	background: linear-gradient(to bottom right, #13191c, #414b52);
+	background-attachment: fixed;
+	object-fit: cover;
 }
 
 #login{
@@ -78,3 +80,5 @@ body, html {
 	text-transform: uppercase;
 	
 }
+
+/*Media maxwidth: 1050, media max height: 600*/
