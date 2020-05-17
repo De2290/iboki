@@ -8,6 +8,7 @@ var account = {
 			dbo = db.db("mydb");
 			entry = {username: user};
 			exists = await dbo.collection("iboki_accounts").findOne(entry);
+			entry = {username: user, pasword: pwd};
 			if (exists == null) {
 				var exists = await dbo.collection("iboki_accounts").insertOne(entry);
 				console.log('Account created');
