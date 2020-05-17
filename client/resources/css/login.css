@@ -36,7 +36,11 @@ body, html {
 	padding-bottom: 5px;
 }
 #username {
-	margin-top: 250px;
+	margin-top: 225px;
+}
+
+#password {
+	margin-top: 35px;
 }
 
 #logo {
