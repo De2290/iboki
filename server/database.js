@@ -24,8 +24,10 @@ var account = {
 			exists = await dbo.collection("iboki_accounts").findOne(entry);
 			if (exists !== null) {
 				console.log(`Signed in as ${user}`);
+				return {isAuthenticated: true, user: exists}
 			} else {
 				console.log('Invalid login attempt');
+				return {isAuthenticated: false, user: null}
 			}
 		})
 	}
