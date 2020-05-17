@@ -41,6 +41,7 @@ body, html {
 
 #username:focus, #password:focus {
 	background: #16191c;
+	color: white;
 }
 
 #logo {
@@ -57,6 +58,6 @@ body, html {
 }
 
 ::placeholder {
-      color: white;
+      color: black;
       letter-spacing: 1px;
 }
