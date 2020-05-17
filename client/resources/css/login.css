@@ -23,7 +23,7 @@ body, html {
 #username, #password {
 	outline: none;
 	border: none;
-	width: 75%;
+	width: 200px;
 	height: 40px;
 	text-align: left;
 	font-family: 'Noto Sans';
