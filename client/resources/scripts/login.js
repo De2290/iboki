@@ -5,4 +5,4 @@ $(() => {
 		var pwd = $('#password').val();
 		// other things will be added after server code additions
 	})
-});
+})

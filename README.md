@@ -1,5 +1,4 @@
 # iboki
-
 A currently in development social networking system. It aims to be simple and easy to use.
 
 ## Getting Started
@@ -24,4 +23,3 @@ Run the application using
 ```
 npm start
 ```
->>>>>>> 5e912fa55840ef1b1f28b7ef25f0271bce765cdc
