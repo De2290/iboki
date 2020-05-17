@@ -15,7 +15,7 @@ body, html {
 	height: 650px;
 	background: white;
 	border: 5px solid #16191c;
-	boder-radius: 15px;
+	border-radius: 15px;
 }
 
 #username, #password {
