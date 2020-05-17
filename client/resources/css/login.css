@@ -39,11 +39,6 @@ body, html {
 	margin-top: 250px;
 }
 
-#username:hover, #password:hover {
-	background: #16191c;
-	color: white;
-}
-
 #logo {
 	position: relative;
 	width: 75%;
@@ -51,15 +46,15 @@ body, html {
 	top: 150px;
 	text-align: center;
 	font-family: "Open Sans";
-	font-size: 50px;
+	font-size: 75px;
 	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-weight: 5px;
+	letter-spacing: 15px;
+	font-weight: 10px;
 }
 
 ::placeholder {
 	color: black;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	text
+	
 }
