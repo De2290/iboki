@@ -12,8 +12,6 @@ body, html {
 	position: fixed;
 	margin-left: -50%;
 	margin-top: 0%;
-	width: 150px;
-	height: 150px;
 }
 #login{
 	position: absolute;
