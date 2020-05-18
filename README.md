@@ -1,5 +1,5 @@
 <p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true" width="200" height="200"></img></p>
-<p align="center"><b>Iboki</b></p>
+<p align="center"><h1>Iboki</h1></p>
 
 # iboki
 
