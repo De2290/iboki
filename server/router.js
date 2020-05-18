@@ -18,7 +18,7 @@ router
     if (isAuth) {
       res.render("profile", { auth: true });
     } else {
-      res.redirect("/register");
+      res.redirect("/login");
     }
   });
 
