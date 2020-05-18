@@ -36,6 +36,13 @@ router
     if (res == true) {
         res.redirect('/login');
     }
+<<<<<<< HEAD
     res.send(user);
+=======
+  })
+  .post("/changepfp", async (req, res) => {
+    await database.changepfp(req.body.user, req.body.pfpURL);
+    res.render("dashboard");
+>>>>>>> 66544c6747948807d621445c23a4739722bcce10
   });
 module.exports = router;
