@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true"></img></p>
+<p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true" width="100" height="100"></img></p>
 <p align="center"><b>Iboki</b></p>
 
 # iboki
