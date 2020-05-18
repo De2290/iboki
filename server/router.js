@@ -27,22 +27,16 @@ router
     console.log(
       `Username: ${req.body.username}, Password: ${req.body.password}`
     );
-    var result = await database.login(req.body.username, req.body.password);
-    if (result.isAuthenticated) {
-      isAuth = true;
-      res.redirect("/profile");
-    } else {
-      res.redirect("/login");
-    }
-    res.redirect("/login");
+    var user = await database.login(req.body.username, req.body.password);
+    isAuth = user.isAuthenticated;
+    res.send(user);
   })
   .post("/register", async (req, res) => {
-    var err = await database.create(req.body.username, req.body.password);
-    if (err == 0) {
-      res.redirect("/register");
-    } else {
-      res.redirect("/login");
+    var user = await database.create(req.body.username, req.body.password);
+    if (res == true) {
+        res.redirect('/login');
     }
+    res.send(user);
   })
   .post("/changepfp", async (req, res) => {
     await database.changepfp(req.body.user, req.body.pfpURL);
