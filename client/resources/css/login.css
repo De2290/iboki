@@ -66,7 +66,7 @@ body, html {
 	margin-top: -20%;
 }
 
-#submit, #register{
+#submit,{
 	outline: none;
 	background: rgb(0, 96, 175);
 	color: white;
@@ -83,7 +83,15 @@ body, html {
 	transition: background 0.1s;
 	cursor: pointer;
 }
-#register {margin-top: 0}
+#register {
+	margin-top: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background 0.1s;
+	margin-top: 200px;
+	margin-left: 50%;
+	cursor: pointer;
+}
 
 #submit:hover, #register:hover {
 	background: #1989e6;
