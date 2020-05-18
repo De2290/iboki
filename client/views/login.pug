@@ -7,12 +7,13 @@ html(lang="en")
 	body
 		script(src="/js/jquery.js")
 		div#login
-			img(src="/images/iboki_logo.png", height="auto", width="500px")#icon
+			img(src="/images/iboki_logo.png", height="auto", width="375px")#icon
 			div#logo IBOKI
 			form(action="/login", method="POST").loginForm
+				p#header LOGIN
 				input(placeholder="Username", name="username")#username
 				input(type="password", placeholder="Password", name="password")#password
 				br
 				br
 				button(type="submit")#submit Log in
-			button(type="submit", onclick="window.location.href='/register'")#register Register
+			button(type="submit", onclick="window.location.href='/register'")#register If you do not have an account, create one here!
