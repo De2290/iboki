@@ -7,7 +7,7 @@ var account = {
 		var dbo = await db.db("iboki");
 		var entry = {username: user};
 		var exists = await dbo.collection("iboki_accounts").findOne(entry);
-		if (exists = null) {
+		if (exists == null) {
 			console.log('Account created');
 		} else {
 			console.log('Account already exists');
