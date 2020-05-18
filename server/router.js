@@ -20,8 +20,13 @@ router
     database.login(req.body.username, req.body.password);
     res.redirect("/login");
 })
-.post("/register", (req, res) => {
-    database.create(req.body.username, req.body.password);
-    res.redirect("/login");
+.post("/register", async (req, res) => {
+    var err = await database.create(req.body.username, req.body.password);
+    console.log(err);
+    if (err == 0) {
+        res.redirect("/register");
+    } else {
+        res.redirect("/login");        
+    }
 })
 module.exports = router;
