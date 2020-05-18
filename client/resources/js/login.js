@@ -7,7 +7,8 @@ $(() => {
 			if (user.isAuthenticated == true) {
 				console.log(user.isAuthenticated);
 				window.location.href = '/profile';
-				
+			} else {
+				console.log("Invalid login");
 			}
 		})
 	})
