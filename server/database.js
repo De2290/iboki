@@ -41,7 +41,7 @@ var account = {
   changepfp: async (user, pfpURL) => {
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
-    var exits = await dbo
+    await dbo
       .collection(logins)
       .updateOne(
         { username: user.username, password: user.password },
