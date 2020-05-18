@@ -10,8 +10,8 @@ body, html {
 #icon {
 	z-index: -20;
 	position: fixed;
-	margin-left: -50%;
-	margin-top: 0%;
+	margin-left: -43.5%;
+	margin-top: 5%;
 }
 #login{
 	position: absolute;
@@ -63,7 +63,7 @@ body, html {
 	letter-spacing: 25px;
 	font-weight: 10px;
 	margin-left: 12.5%;
-	margin-top: -20%;
+	margin-top: -23%;
 }
 
 #submit {
