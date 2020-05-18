@@ -9,15 +9,16 @@ var account = {
 	var res;
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
+    var entry = {username: user};
     var entry = {
       username: user,
       password: pwd,
       pfpURL:
         "https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg",
     };
-    var exists = await dbo.collection("iboki_accounts").findOne(entry);
+    var exists = await dbo.collection("iboki_accounts").findOne({username: user});
     if (exists == null) {
-      await dbo.collection("iboki_accounts").insertOne({username: user, password: password});
+      await dbo.collection("iboki_accounts").insertOne({username: user, password: pwd});
       console.log("Account created");
 	  await dbo.createCollection(user);
 	  res = true;
