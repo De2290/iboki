@@ -1,5 +1,5 @@
 <p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true" width="200" height="200"></img></p>
-<h1 align="center"><b>PineappleCAS</b></h1>
+<h1 align="center"><b>iboki</b></h1>
 
 A currently in development social networking system. It aims to be simple and easy to use.
 
