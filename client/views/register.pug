@@ -6,13 +6,14 @@ html(lang="en")
 		title Register
 	body
 		script(src="/js/jquery.js")
+		script(src="/js/register.js")
 		div#login
 			img(src="/images/iboki_logo.png", height="auto", width="375px")#icon
 			div#logo IBOKI
-			form(action="/register", method="POST").loginForm
+			form.loginForm
 				p#header Sign Up
 				input(placeholder="Create Username", name="username")#username
 				input(type="password", placeholder="Create Password", name="password")#password
 				br
 				br
-				button(type="submit", onclick="window.location.href='/login'")#submit Register
+				button#submit Register
