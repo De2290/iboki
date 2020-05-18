@@ -1,3 +1,5 @@
+const { use } = require("./router");
+
 const Client = require("mongodb").MongoClient;
 const url =
   process.env.MONGODB_URI ||
@@ -7,7 +9,12 @@ var account = {
   create: async (user, pwd) => {
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
-    var entry = { username: user, password: pwd };
+    var entry = {
+      username: user,
+      password: pwd,
+      pfpURL:
+        "https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg",
+    };
     var exists = await dbo.collection("iboki_accounts").findOne(entry);
     if (exists == null) {
       await dbo.collection("iboki_accounts").insertOne(entry);
@@ -30,6 +37,16 @@ var account = {
       console.log("Invalid login attempt");
       return { isAuthenticated: false, user: null };
     }
+  },
+  changepfp: async (user, pfpURL) => {
+    var db = await Client.connect(url);
+    var dbo = await db.db("iboki");
+    var exits = await dbo
+      .collection(logins)
+      .updateOne(
+        { username: user.username, password: user.password },
+        { $set: { pfpurl: pfpURL } }
+      );
   },
 };
 
