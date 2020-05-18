@@ -6,9 +6,8 @@ var account = {
 		var db = await Client.connect(url);
 		var dbo = await db.db("iboki");
 		var entry = {username: user};
-		exists = await dbo.collection("iboki_accounts").findOne(entry);
+		var exists = await dbo.collection("iboki_accounts").findOne(entry);
 		if (exists = null) {
-			var exists = await dbo.collection("iboki_accounts").insertOne({username: user, password: pwd});
 			console.log('Account created');
 		} else {
 			console.log('Account already exists');
