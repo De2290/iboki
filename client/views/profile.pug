@@ -5,9 +5,9 @@ html(lang="en")
         link(rel="stylesheet" type="text/css" href="/css/profile.css")
         title Dashboard
     body
-        img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")
-        p Your Profile Picture
+        img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")#pfppic
+        p#pfptitle Your Profile Picture
 
         form(action="/changepfp" method="POST")
-            input(type="text", name="pfpURL", placeholder="Enter URL of picture")
-            button(type="submit") Change
+            input(type="text", name="pfpURL", placeholder="Enter URL of picture")#pfpurl
+            button(type="submit")#pfpchange Change

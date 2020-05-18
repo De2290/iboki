@@ -37,5 +37,9 @@ router
         res.redirect('/login');
     }
     res.send(user);
+  })
+  .post("/changepfp", async (req, res) => {
+    await database.changepfp(req.body.user, req.body.pfpURL);
+    res.render("dashboard");
   });
 module.exports = router;
