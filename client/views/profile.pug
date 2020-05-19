@@ -2,12 +2,34 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet" type="text/css" href="/css/profile.css")
+        link(rel="stylesheet" type="text/css" href="/css/dashboard.css")
         title Dashboard
     body
-        img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")#pfppic
-        p#pfptitle Your Profile Picture
+        div#menu
+            button#icon
+                img(src = '/images/icon.png')#iconimage
+            button#logotext IBOKI
 
-        form(action="/changepfp" method="POST")
-            input(type="text", name="pfpURL", placeholder="Enter URL of picture")#pfpurl
-            button(type="submit")#pfpchange Change
+        div#accountinfo
+            div#pfpcredentials
+                img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")#pfppic
+                p#pfptitle Your profile picture
+
+                form(action="/changepfp" method="POST")
+                    input(type="text", name="pfpURL", placeholder="Image URL")#pfpurl
+                    br
+                    button(type="submit")#pfpchange Change Image
+            div#usernamecredentials
+                p#usernametitle Your Username
+                input(type="text", name='usernameChange', placeholder="New Username")#newusername
+                br
+                button(type="submit")#usernamechange Update
+            div#passcred
+                p#passtitle Your password
+                input(type="password", name='oldPass', placeholder="Enter Old Password")#oldpass
+                br
+                input(type="password", name='newPass', placeholder="Enter New Password")#newpass1
+                br
+                input(type="password", name='reenterNewPass', placeholder="Reenter New Password")#newpass2
+                br
+                button(type="submit")#passwordchange Update

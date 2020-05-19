@@ -16,9 +16,9 @@ body, html {
 #login{
 	position: absolute;
 	top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	width: 1000px;
 	height: 550px;
 	background: white;
@@ -61,7 +61,6 @@ body, html {
 	font-size: 60px;
 	text-transform: uppercase;
 	letter-spacing: 25px;
-	font-weight: 10px;
 	margin-left: 2%;
 	margin-top: -46%;
 	border-right: 1px solid black;
