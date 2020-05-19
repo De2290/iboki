@@ -132,4 +132,13 @@ body, html {
 	
 }
 
+#error {
+	position: relative;
+	background: transparent;
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 14px;
+	margin-left: 50%;
+	color: red;
+}
 /*Media maxwidth: 1050, media max height: 600*/

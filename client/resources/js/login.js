@@ -3,12 +3,13 @@ $(() => {
 		e.preventDefault();
 		var user = $('#username').val();
 		var pwd = $('#password').val();
-		$.post('/login', {username: user, password: pwd}, (user) => {
-			if (user.isAuthenticated == true) {
-				console.log(user.isAuthenticated);
+		user = user.replace(/\$/g, '&#36;');
+		$.post('/login', {username: user, password: pwd}, (username) => {
+			if (username.isAuthenticated == true) {
+				console.log(username.isAuthenticated);
 				window.location.href = '/profile';
 			} else {
-				console.log("Invalid login");
+				$('#error').html(username.error);
 			}
 		})
 	})
