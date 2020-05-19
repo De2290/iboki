@@ -4,39 +4,44 @@ const Client = require("mongodb").MongoClient;
 const url =
   process.env.MONGODB_URI ||
   "mongodb+srv://tayinde:hnn322om@cluster0-nqwsw.mongodb.net/test?retryWrites=true&w=majority";
-
 var account = {
   create: async (user, pwd) => {
+	var res;
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
+    var entry = {username: user};
     var entry = {
       username: user,
       password: pwd,
       pfpURL:
         "https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg",
     };
-    var exists = await dbo.collection("iboki_accounts").findOne(entry);
+    var exists = await dbo.collection("iboki_accounts").findOne({username: user});
     if (exists == null) {
-      await dbo.collection("iboki_accounts").insertOne(entry);
+      await dbo.collection("iboki_accounts").insertOne({username: user, password: pwd});
       console.log("Account created");
-      await dbo.createCollection(user);
+	  await dbo.createCollection(user);
+	  res = true;
     } else {
       console.log("Account already exists");
-      return 0;
-    }
+      res = "Account already exists";
+	}
+	return res;
   },
   login: async (user, pwd) => {
+	var res;
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
     var entry = { username: user, password: pwd };
     var exists = await dbo.collection("iboki_accounts").findOne(entry);
     if (exists !== null) {
       console.log(`Signed in as ${user}`);
-      return { isAuthenticated: true, user: exists };
+	  res = { isAuthenticated: true, user: exists };
     } else {
       console.log("Invalid login attempt");
-      return { isAuthenticated: false, user: null };
-    }
+	  res = { isAuthenticated: false, user: null };
+	}
+	return res;
   },
   changepfp: async (user, pfpURL) => {
     var db = await Client.connect(url);

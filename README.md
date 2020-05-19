@@ -1,9 +1,7 @@
-<p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true"></img></p>
-<p align="center"><b>Iboki</b></p>
+<p align="center"><img src="https://github.com/De2290/iboki/blob/master/iboki.png?raw=true" width="200" height="200"></img></p>
+<h1 align="center"><b>iboki</b></h1>
 
-# iboki
-
-A currently in development social networking system. It aims to be simple and easy to use.
+<p align="center">A currently in development social networking system. It aims to be simple and easy to use.</p>
 
 ## Getting Started
 
