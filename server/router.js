@@ -33,9 +33,6 @@ router
   })
   .post("/register", async (req, res) => {
     var user = await database.create(req.body.username, req.body.password);
-    if (res == true) {
-        res.redirect('/login');
-    }
     res.send(user);
   })
   .post("/changepfp", async (req, res) => {
