@@ -93,14 +93,14 @@ body, html {
 	margin-top: 0;
 	letter-spacing: 0px;
 	transition: background 0.1s;
-	margin-top: 150px;
+	margin-top: 130px;
 	margin-left: 69.99%;
 	cursor: pointer;
 	background: none;
 	border: none;
 	color: white;
-	font-family: "Open-Sans";
-	font-size: 15px;
+	font-family: "Open Sans";
+	font-size: 13px;
 	transition: color 0.1s;
 	outline: none;
 }
