@@ -14,17 +14,31 @@ body {
 #menu {
     background: white;
     height: 75px;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 40px black;
+    display: flex;
+    align-items: center;
 }
 #icon {
     height: 50px;
     width: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     cursor: pointer;
     outline: none;
     border: none;
-    background-image: url(https://media.discordapp.net/attachments/711281543737507880/712073688719294574/unknown.png);
+    border-radius: 100px;
+    background: black;
+}
+#logotext {
+    font-family: "Open Sans";
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 25px;
+    font-weight: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 
@@ -32,7 +46,7 @@ body {
     background: white;
     width: 300px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 50px;
     border-bottom: 5px solid;
     border-image-source: linear-gradient(to bottom right, dodgerblue, mediumspringgreen);
@@ -44,16 +58,17 @@ body {
 
 #pfppic {
     border-radius: 100px;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 
 #pfptitle {
     color: black;
     font-family: sans-serif;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 0px;
+    margin-top: 30px;
 }
 
 #pfpurl {
@@ -67,6 +82,7 @@ body {
     font-family: "Open-Sans";
     font-size: 15px;
     width: 200px;
+    margin-top: 10px;
 }
 
 #pfpchange {
@@ -74,7 +90,7 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-top: 10%;
+    margin-top: 15%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -91,16 +107,16 @@ body {
 
 #usernamecredentials {
     background: white;
-    width: 450px;
+    width: 500px;
     text-align: left;
     padding-left: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 14px;
+    padding-bottom: 20px;
     border-bottom: 5px solid;
     border-image-source: linear-gradient(to bottom right, dodgerblue, mediumspringgreen);
     border-image-slice: 60 30;
     box-shadow: 0px 0px 15px black;
-    margin-top: -401px;
+    margin-top: -481px;
     margin-left: 340px;
 }
 
@@ -108,7 +124,7 @@ body {
     color: black;
     font-family: sans-serif;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 0px;
 }
 
@@ -142,6 +158,71 @@ body {
 }
 
 #usernamechange:hover{
+    background: #1989e6;
+}
+
+#passcred {
+    background: white;
+    width: 500px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to bottom right, dodgerblue, mediumspringgreen);
+    border-image-slice: 60 30;
+    box-shadow: 0px 0px 15px black;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+#passtitle {
+    color: black;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+#oldpass {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: black;
+    font-family: "Open-Sans";
+    font-size: 15px;
+    width: 300px;
+}
+#newpass1, #newpass2 {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: black;
+    font-family: "Open-Sans";
+    font-size: 15px;
+    width: 300px;
+    margin-top: 12px;
+}
+#passwordchange {
+    background: #0060af;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: background 0.1s;
+}
+#passwordchange:hover {
     background: #1989e6;
 }
 

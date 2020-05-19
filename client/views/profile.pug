@@ -7,6 +7,7 @@ html(lang="en")
     body
         div#menu
             button#icon
+            button#logotext IBOKI
 
         div#pfpcredentials
             img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")#pfppic
@@ -15,9 +16,18 @@ html(lang="en")
             form(action="/changepfp" method="POST")
                 input(type="text", name="pfpURL", placeholder="Image URL")#pfpurl
                 br
-                button(type="submit")#pfpchange Change
+                button(type="submit")#pfpchange Change Image
         div#usernamecredentials
             p#usernametitle Your Username
             input(type="text", name='usernameChange', placeholder="New Username")#newusername
             br
             button(type="submit")#usernamechange Update
+        div#passcred
+            p#passtitle Your password
+            input(type="password", name='oldPass', placeholder="Enter Old Password")#oldpass
+            br
+            input(type="password", name='newPass', placeholder="Enter New Password")#newpass1
+            br
+            input(type="password", name='reenterNewPass', placeholder="Reenter New Password")#newpass2
+            br
+            button(type="submit")#passwordchange Update
