@@ -5,21 +5,65 @@ const url =
   process.env.MONGODB_URI ||
   "mongodb+srv://tayinde:hnn322om@cluster0-nqwsw.mongodb.net/test?retryWrites=true&w=majority";
 
-
+const unallowed = [
+	'!' ,
+	'%',
+	'@' ,
+	"#" ,
+	"&" ,
+	"=" ,
+	"<" ,
+	">" ,
+	":" ,
+	";" ,
+	"," ,
+	"/" , 
+	"~" ,
+	"`" ,
+	"," ,
+	"]" ,
+	RegExp('\\\\'),
+	"{" ,
+	"}" ,
+]
 var check = {
 	symbols : (user) => {
+		user = user
+		.replace(/\+/g &&
+			/\*/g &&
+			/\$/g &&
+			/\^/g &&
+			/%/g &&
+			/\)/g &&
+			/\(/g &&
+			/\\/g &&
+			/\?/g &&
+			/\[/g &&
+			/|/g &&
+			/./g &&
+			/\d@\d/g &&
+			RegExp('/\\\/')
+		, '_')
 		var res;
-		if ((user.search('<') !== -1) || (user.search('>') !== -1) || (user.search('&#36;') !== -1) || (user.search(' ') !== -1)) {
+		var num = 0;
+		unallowed.forEach((symbol) => {
+			if (user.search(symbol) !== -1) {
+				num += 1;
+				console.log(symbol);
+			}
+		})
+		if (num > 0) {
 			res = true;
-			console.log(user.search('&#36;') !== -1);
+			console.log(num);
 		} else {
 			res = false;
+			console.log("No symbols detected");
 		}
 		return res;
 	},
 	inSize : (user) => {
 		var res;
-		if ((user.length < 16) && (user.length > 2)) {
+		if ((user.length < 26) && (user.length > 2)) {
 			res = true;
 		} else {
 			res = false;
@@ -52,7 +96,7 @@ var account = {
 	else if (check.symbols(user) == true) {
 	  		res = {allowed: false, error: "No symbols or spaces allowed in username"};
 	} else if (check.inSize(String(user)) == false) {
-		res = {allowed: false, error: "Username must be 3-15 characters long."};
+		res = {allowed: false, error: "Username must be 3-25 characters long."};
 	}  else {
 			res = {allowed: false, error: "Username already taken."};
 	}
