@@ -102,7 +102,7 @@ var account = {
 	}
 	return res;
   },
-  login: async (user, pwd) => {
+  login: async (user, pwd, key) => {
 	var res;
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
@@ -110,9 +110,9 @@ var account = {
     var exists = await dbo.collection("iboki_accounts").findOne(entry);
     if (exists !== null) {
       console.log(`Signed in as ${user}`);
-	  res = { isAuthenticated: true, user: exists, error: null};
+	  res = { isAuthenticated: true, user: exists, error: null, key: key };
     } else {
-	  res = { isAuthenticated: false, user: null, error: "Invalid login attempt"};
+	  res = { isAuthenticated: false, user: null, error: "Invalid login attempt", key: null };
 	}
 	return res;
   },
@@ -120,7 +120,7 @@ var account = {
     var db = await Client.connect(url);
     var dbo = await db.db("iboki");
     await dbo
-      .collection(logins)
+      .collection('iboki_accounts')
       .updateOne(
         { username: user.username, password: user.password },
         { $set: { pfpurl: pfpURL } }
