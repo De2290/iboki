@@ -1,7 +1,9 @@
+const key = '57q92lPNNxT6998QwLZ39emFJoQ';
 const express = require("express");
 const database = require("./database.js");
 
 const router = express.Router();
+
 
 var isAuth = false;
 router
@@ -15,7 +17,7 @@ router
     res.render("register");
   })
   .get("/profile", (req, res) => {
-    if (isAuth) {
+    if (isAuth == true) {
       res.render("profile", { auth: true });
     } else {
       res.redirect("/login");
