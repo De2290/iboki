@@ -65,10 +65,10 @@ body {
     width: 300px;
     height: 420px;
     background: white;
-    border-bottom: 5px solid;
+    border-bottom: 7px solid;
     border-image-source: linear-gradient(to right, dodgerblue, mediumspringgreen);
     border-image-slice: 60 30;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 20px black;
     text-align: center;
     padding-top: 30px;
 }
@@ -76,10 +76,10 @@ body {
     width: 300px;
     height: 420px;
     background: white;
-    border-bottom: 5px solid;
+    border-bottom: 7px solid;
     border-image-source: linear-gradient(to left, dodgerblue, mediumspringgreen);
     border-image-slice: 60 30;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 20px black;
     margin-left: 15px;
     text-align: center;
     padding-top: 30px;
@@ -88,10 +88,10 @@ body {
     width: 300px;
     height: 420px;
     background: white;
-    border-bottom: 5px solid;
+    border-bottom: 7px solid;
     border-image-source: linear-gradient(to right, dodgerblue, mediumspringgreen);
     border-image-slice: 60 30;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 20px black;
     margin-left: 15px;
     text-align: center;
     padding-top: 30px;
@@ -105,17 +105,19 @@ body {
 
 #pfptitle, #usernametitle, #passtitle {
     text-transform: capitalize;
-    font-family: sans-serif;
-    font-size: 25px;
+    font-family: "Open-Sans";
+    font-size: 30px;
     padding-top: 10px;
+    font-weight: lighter;
     padding-bottom: 10px;
     text-align: center;
     margin-left: 22.5px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    box-shadow: 0px 0px 5px gray;
     width: 250px;
     border-radius: 7px;
+    letter-spacing: 1px;
+    margin-top: 15px;
 }
 
 #pfpurl, #newusername, #oldpass, #newpass1, #newpass2 {
@@ -128,10 +130,15 @@ body {
     padding-bottom: 8px;
     border-radius: 0px;
     margin-top: 10px;
-    transition: box-shadow 0.2s;
+    transition: border 0.3s;
+    transition: border-radius 0.3s;
+}
+#pfpurl {
+    margin-top: -10px;
 }
 #pfpurl:hover, #newusername:hover, #oldpass:hover, #newpass1:hover, #newpass2:hover {
-    box-shadow: 0px 0px 5px gray;
+    border: 1px solid black;
+    border-radius: 100px;
 }
 
 ::placeholder {
@@ -144,7 +151,7 @@ body {
     font-family: sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
