@@ -12,18 +12,19 @@ html(lang="en")
             div#accountinfo
                 div#pfpcredentials
                     img(src="https://uwosh.edu/deanofstudents/wp-content/uploads/sites/156/2019/02/profile-default.jpg")#pfppic
-                    p#pfptitle Your profile picture
+                    p#pfptitle Profile Picture
                     form(action="/changepfp" method="POST")
                         input(type="text", name="pfpURL", placeholder="Image URL")#pfpurl
                         br
-                        button(type="submit")#pfpchange Change Image
+                        button(type="submit")#pfpchange Update
                 div#usernamecredentials
-                    p#usernametitle Your Username
+                    p#usernametitle Username
                     input(type="text", name='usernameChange', placeholder="New Username")#newusername
+                    input(type="text", name='oldpass', placeholder="Confirm Password")#oldpass
                     br
                     button(type="submit")#usernamechange Update
                 div#passcred
-                    p#passtitle Your password
+                    p#passtitle password
                     input(type="password", name='oldPass', placeholder="Enter Old Password")#oldpass
                     br
                     input(type="password", name='newPass', placeholder="Enter New Password")#newpass1
@@ -31,8 +32,4 @@ html(lang="en")
                     input(type="password", name='reenterNewPass', placeholder="Reenter New Password")#newpass2
                     br
                     button(type="submit")#passwordchange Update
-<<<<<<< HEAD
                     
-=======
-                    
->>>>>>> ef44a828eda329e1e1727b983bc7642bb7b2cb08
