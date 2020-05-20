@@ -143,12 +143,12 @@ body {
 
 ::placeholder {
     font-size: 13px;
-    font-family: sans-serif;
+    font-family: "Open Sans";
 }
 
 #pfpchange, #usernamechange, #passwordchange {
     color: white;
-    font-family: sans-serif;
+    font-family: "Open Sans";
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 5px;
