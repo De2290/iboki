@@ -103,7 +103,7 @@ body {
 
 #pfptitle, #usernametitle, #passtitle {
     text-transform: capitalize;
-    font-family: "Open-Sans";
+    font-family: "Open Sans";
     font-size: 30px;
     padding-top: 10px;
     font-weight: lighter;
@@ -134,7 +134,7 @@ body {
 #pfpurl {
     margin-top: -10px;
 }
-#pfpurl:hover, #newusername:hover, #oldpass:hover, #newpass1:hover, #newpass2:hover {
+#pfpurl:focus, #newusername:focus, #oldpass:focus, #newpass1:focus, #newpass2:focus {
     border: 1px solid black;
     border-radius: 100px;
 }
