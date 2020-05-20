@@ -63,7 +63,7 @@ body {
 }
 #pfpcredentials {
     width: 300px;
-    height: 420px;
+    height: 380px;
     background: white;
     border-bottom: 7px solid;
     border-image-source: linear-gradient(to right, dodgerblue, mediumspringgreen);
@@ -74,7 +74,7 @@ body {
 }
 #usernamecredentials {
     width: 300px;
-    height: 420px;
+    height: 380px;
     background: white;
     border-bottom: 7px solid;
     border-image-source: linear-gradient(to left, dodgerblue, mediumspringgreen);
@@ -86,7 +86,7 @@ body {
 }
 #passcred {
     width: 300px;
-    height: 420px;
+    height: 380px;
     background: white;
     border-bottom: 7px solid;
     border-image-source: linear-gradient(to right, dodgerblue, mediumspringgreen);

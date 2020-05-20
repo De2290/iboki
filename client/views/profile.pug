@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" type="text/css" href="/css/dashboard.css")
         title Dashboard
+        
     body
         div#menu
             button#icon
@@ -22,7 +23,7 @@ html(lang="en")
                 div#usernamecredentials
                     p#usernametitle Username
                     input(type="text", name='usernameChange', placeholder="New Username")#newusername
-                    input(type="text", name='oldpass', placeholder="Confirm Password")#oldpass
+                    input(type="password", name='oldpass', placeholder="Confirm Password")#oldpass
                     br
                     button(type="submit")#usernamechange Update
                 div#passcred
