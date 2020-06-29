@@ -2,8 +2,7 @@ const { use } = require("./router");
 
 const Client = require("mongodb").MongoClient;
 const url =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://tayinde:hnn322om@cluster0-nqwsw.mongodb.net/test?retryWrites=true&w=majority";
+  process.env.MONGODB_URI;
 
 const unallowed = [
 	'!' ,
